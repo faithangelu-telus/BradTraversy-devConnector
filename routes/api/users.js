@@ -65,13 +65,14 @@ router.post(
             });  
 
             // Return jsonwebtoken
-            res.send('User registered');
+            
 
         } catch(err) {
             console.error(err.message);
             res.status(500).send('Server Error')
         }
 
+        res.json(token);
     }
 );
 
