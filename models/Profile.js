@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+mongoose.connect(uri, { useFindAndModify: false });
 const ProfileSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
