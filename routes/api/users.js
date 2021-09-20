@@ -65,7 +65,7 @@ router.post(
             });  
 
             // Return jsonwebtoken
-            
+            // res.json(token);
 
         } catch(err) {
             console.error(err.message);
