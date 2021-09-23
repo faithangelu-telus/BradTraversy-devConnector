@@ -224,7 +224,6 @@ router.put('/experience',
 // @route   DELETE api/profile/experience/:exp_id
 // @desc    Delete experience from profile
 // @access  Private
-
 router.delete('/experience/:exp_id', auth, async (req, res) => {
     try {
         // Remove experience
@@ -250,7 +249,8 @@ router.put('/education',
         [
             check('school', 'School is required').not().isEmpty(),
             check('degree', 'Degree is required').not().isEmpty(),
-            check('fieldofstudy', 'Field of Study is required').not().isEmpty()
+            check('fieldofstudy', 'Field of Study is required').not().isEmpty(),
+            check('from', 'From is required').not().isEmpty()
         ]
     ], 
         async (req,res) => {
