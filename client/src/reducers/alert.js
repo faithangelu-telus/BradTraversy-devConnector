@@ -1,7 +1,8 @@
-import { SET_ALERT, REMOVE_ALERT } from '../actions/types';
+import { SET_ALERT, REMOVE_ALERT } from "../actions/types";
 
 const initialState = [];
 
+// eslint-disable-next-line
 export default function(state = initialState, action) {
     switch(action.type) {
         case SET_ALERT: 
